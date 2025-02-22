@@ -85,5 +85,29 @@ Delta compression using up to 8 threads
 Compressing objects: 100% (3/3), done.
 Writing objects: 100% (6/6), 501 bytes | 250.00 KiB/s, done.
 Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+
+PS C:\Users\Admin\Desktop\gitt> git init
+Reinitialized existing Git repository in C:/Users/Admin/Desktop/gitt/.git/
+PS C:\Users\Admin\Desktop\gitt> git add first.py
+PS C:\Users\Admin\Desktop\gitt> git commit -m "added"
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Admin\Desktop\gitt> git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Admin\Desktop\gitt> git push --set-upstream origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/shridhar5me/gitry.git
- * [new branch]      main -> main
+   3dc638d..4267f42  main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\Admin\Desktop\gitt> 
